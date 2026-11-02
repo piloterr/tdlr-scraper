@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://www.tdlr.texas.gov/LicenseSearch/SearchResultDetail.asp?1=AIRREF00000564",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -206,7 +206,7 @@ response = requests.get(
     params={
         "city": "Austin. One of query, city, county, or postal_code is required.",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
